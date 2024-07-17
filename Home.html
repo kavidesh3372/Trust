@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
+</head>
+<body>
+    <div class="nav-container">
+        <img class="nav-logo" src="./Assests/Icon.ico" width="100">
+        <button class="nav-toggle" onclick="toggleNav()">&#9776;</button>
+        <div class="nav-buttons-container">
+            <button class="nav-buttons" type="button">Home</button>
+            <button class="nav-buttons" type="button">About</button>
+            <button class="nav-buttons" type="button">Programs</button>
+            <button class="nav-buttons" type="button">Donate</button>
+            <button class="nav-buttons" type="button">Stories</button>
+            <button class="nav-buttons" type="button">Report</button>
+            <button class="nav-buttons" type="button">Gallery</button>
+            <button onclick="scrollToContact()"class="nav-buttons" type="button">Contact Us</button>
+        </div>
+    </div>
+    <div class="slider">
+        <div class="slides">
+            <div class="slide"><img src="./Assests/earth.jpeg" alt="Image 1"></div>
+            <div class="slide"><img src="./Assests/Rural.jpeg" alt="Image 2"></div>
+            <div class="slide"><img src="./Assests/agriculture.jpeg" alt="Image 2"></div>
+            <div class="slide"><img src="./Assests/Education.jpeg" alt="Image 2"></div>
+        </div>
+        <div class="dots">
+            <span class="dot" onclick="moveToSlide(0)"></span>
+            <span class="dot" onclick="moveToSlide(1)"></span>
+            <span class="dot" onclick="moveToSlide(2)"></span>
+            <span class="dot" onclick="moveToSlide(3)"></span>
+        </div>
+        </div>
+    </div>
+    <div class="main-container">
+        <div class="details-container">
+            <div class="vision-container">
+                <h1>Our Vision</h1>
+                <p>To achieve our vision, Viveha Trust is committed to sustainable rural development, environmental conservation, agricultural growth, women's empowerment, child development, and fostering community unity for collective prosperity and well-being.</p>
+            </div>
+            <div class="mission-container">
+                <h1>Our Mission</h1>
+                <p>Our mission is to foster sustainable rural development, promote a green environment, support agricultural growth, empower women, nurture child development, and build a united community.</p>
+            </div>
+        </div>
+        <div class="organization-container">
+            <h1>About the Organization</h1>
+            <p>Founded in 2017 by J. Packiaraj Anto Charlee and friends, Viveha Trust is a non-profit dedicated to helping communities and protecting the environment. Without seeking profit or advertising, the trust focuses on several important activities:</p>
+            <ol>
+                <p1>Teaching farmers better ways to grow crops without harming the environment</p1><br>
+                <p2>Giving scholarships and school supplies to kids who need them.</p2><br>
+                <p3>Providing food and health check-ups for older people who may need extra help.</p3><br>
+                <p4>Helping people with physical challenges get the support and tools they need.</p4><br>
+                <p5>Teaching skills and helping women start their own businesses.</p5><br>
+                <p6>Promoting activities that keep our planet clean and green.</p6><br>
+                <p7>Viveha Trust works hard to make life better for everyone and to make sure our Earth stays healthy for future generations.</p7>
+            </ol>
+        </div>
+       
+    </div>
+    <div class="bottom-container">
+        <div class="founder-container">
+            <h1>About us</h1>
+            <p>J. Packiaraj Anto Charlee, founder of Viveha Trust in 2017, is a former community leader deeply involved in social activities, including COVID-19 relief, improving agricultural practices for coconut farmers, promoting environmental sustainability through reduced plastic use and electric vehicles, advising on hygiene, and educating children on healthy eating habits.</p>
+        </div>
+        <div>
+            <h1>Our Location</h1>
+            <div class="location-icon-container">
+                <span>
+                    <i class="fas fa-map-marker-alt location-icon"></i> 
+                    Round road CSI Church near,
+                    EZHIL NAGAR, Dindigul - 624005
+                </span><br>
+                <span>
+                    <i class="fas fa-solid fa-mobile location-icon"></i>
+                    +91-9750360006
+                </span><br>
+                <span>
+                    <i class="fas fa-solid fa-envelope location"></i>
+                    jpr@vivehatrust.org
+                </span>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="Home.js">
+</script>
+</html>
