@@ -3,11 +3,20 @@
 <head>    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Home.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Playwrite+RO:wght@100..400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kalnia+Glaze:wght@100..700&family=Playwrite+AR:wght@100..400&family=Playwrite+HR+Lijeva:wght@100..400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <div class="nav-container">
-        <img class="nav-logo" src="./Assests/Icon.ico" width="100">
+        <div>
+            <img class="nav-logo" src="./Assests/Icon.ico" width="100">
+            <span class="nav-text">VIVEHA TRUST</span>
+        </div>
         <button class="nav-toggle" onclick="toggleNav()">&#9776;</button>
         <div class="nav-buttons-container">
             <button class="nav-buttons" type="button">Home</button>
@@ -17,7 +26,7 @@
             <button class="nav-buttons" type="button">Stories</button>
             <button class="nav-buttons" type="button">Report</button>
             <button class="nav-buttons" type="button">Gallery</button>
-            <button onclick="scrollToContact()"class="nav-buttons" type="button">Contact Us</button>
+            <button onclick="scrollToContact()" class="nav-buttons" type="button">Contact Us</button>
         </div>
     </div>
     <div class="slider">
@@ -33,12 +42,16 @@
             <span class="dot" onclick="moveToSlide(2)"></span>
             <span class="dot" onclick="moveToSlide(3)"></span>
         </div>
-        </div>
+    </div>
+    <div class="welcome-container">
+            <p class="welcome-message">Welcome to Viveha Trust</p>
+            <p class="qutoes">"It's not how much we give but how much love we put into giving"</p>
+            <span class="qutoes-author">~Mother Teresa</span>
     </div>
     <div class="main-container">
         <div class="details-container">
             <div class="vision-container">
-                <h1>Our Vision</h1>
+                <h1><br>Our Vision </h1>
                 <p>To achieve our vision, Viveha Trust is committed to sustainable rural development, environmental conservation, agricultural growth, women's empowerment, child development, and fostering community unity for collective prosperity and well-being.</p>
             </div>
             <div class="mission-container">

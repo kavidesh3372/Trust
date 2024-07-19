@@ -31,6 +31,16 @@ body {
     flex-shrink: 0;
 }
 
+.nav-text {
+    font-size: 18px;
+    font-family: "Kalnia Glaze", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100; /* Apply the new font here */
+    display: flex;
+    padding: 10px;
+}
 .nav-buttons-container {
   display: flex;
 }
@@ -157,6 +167,37 @@ body {
 .dot.active {
     background-color: rgba(0,0,0,0.8);
 }
+.welcome-container {
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    color:black;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.welcome-message {
+    font-family: "Abril Fatface", serif;
+    font-style: normal;
+    font-size: xx-large;
+    display: flex;
+    justify-content: center ;
+    align-content: center;
+}
+.qutoes {
+    font-size: x-large;
+    font-family: "Playwrite RO", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+    display: flex;
+    justify-content: center ;
+    align-content: center;
+}
+.qutoes-author {
+    display: flex;
+    justify-content: flex-end;
+    font-size: large;
+}
+
 .bottom-container {
     display: flex;
     justify-content: space-around; /* Align items horizontally */
@@ -201,21 +242,84 @@ body {
     .organization-container{
         width: 400px;
     }
+    .bottom-container{
+        display: flex;
+        justify-content: space-around; /* Align items horizontally */
+        align-items: flex-start;
+        flex-direction: column; /* Align items vertically at the start */
+        background-color: #f0f0f0;
+        padding: 20px;
+        border-top: 2px solid #ddd;
+    }
+    .founder-container {
+        width: 100%;
+        padding: 10px;
+    }
+    
+    .location-container {
+        width: 100%;
+        padding: 10px;
+    }
 }
-@media (max-width:400px){
+@media (max-width:450px){
     .organization-container,.vision-container,.mission-container{
         width: 250px;
         height: auto;
     }
+}
+@media (max-width:500px) and (min-width:0px){
+    .nav-buttons-container {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        position: absolute;
+        top: 60px; /* Adjust this value as needed to position the list */
+        left: 0;
+        right: 0;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        z-index: 1000;
+        padding: 10px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        max-height: calc(100vh - 60px); /* Adjust max height to fit viewport minus header */
+        overflow-y: auto; /* Enable scrolling if necessary */
+    }
+
+    .nav-buttons-container.show {
+        display: flex;
+    }
+
     .nav-toggle {
         display: block;
         cursor: pointer;
         position: absolute;
-        top: 20px;
-        left: 30%;
+        top: 30px;
+        left: 80%;
+    }
+    .nav-toggle.scrolled {
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        top: 30px;
+        left: 80%;
+    }
+    .nav-buttons {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+        background-color: transparent;
+        color: black;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .nav-buttons:hover {
+        background-color: #f0f0f0;
     }
 }
-@media (max-width: 746px) {
+@media (max-width: 807px) and (min-width: 501px) {
 
     .nav-buttons-container {
         display: none;
@@ -242,10 +346,16 @@ body {
         display: block;
         cursor: pointer;
         position: absolute;
-        top: 10px;
+        top: 30px;
         left: 90%;
     }
-
+    .nav-toggle.scrolled {
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        top: 30px;
+        left: 90%;
+    }
     .nav-buttons {
         display: block;
         width: 100%;

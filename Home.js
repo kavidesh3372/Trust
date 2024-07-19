@@ -13,7 +13,16 @@ function toggleNavbarColor() {
         navbar.classList.remove('scrolled');
     }
 }
+function toggleNavbar() {
+    var navbar = document.querySelector('.nav-toggle');
+    if (window.scrollY > 10) {
+        navbar.classList.add('scrolled');
+    } else {
+        navbar.classList.remove('scrolled');
+    }
+}
 window.addEventListener('scroll', toggleNavbarColor);
+window.addEventListener('scroll',toggleNavbar)
 
 let slideIndex = 0;
 const slides = document.querySelectorAll('.slide');
